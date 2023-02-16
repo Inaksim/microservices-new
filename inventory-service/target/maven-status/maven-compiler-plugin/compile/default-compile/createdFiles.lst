@@ -1,5 +1,7 @@
 com\testingProgramm\inventoryservice\InventoryServiceApplication.class
 com\testingProgramm\inventoryservice\service\InventoryService.class
 com\testingProgramm\inventoryservice\model\Inventory.class
-com\testingProgramm\inventoryservice\controller\InventoryController.class
 com\testingProgramm\inventoryservice\repository\InventoryRepository.class
+com\testingProgramm\inventoryservice\dto\InventoryResponse$InventoryResponseBuilder.class
+com\testingProgramm\inventoryservice\controller\InventoryController.class
+com\testingProgramm\inventoryservice\dto\InventoryResponse.class

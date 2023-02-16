@@ -2,7 +2,10 @@ com\testingProgramm\orderservice\repository\OrderRepository.class
 com\testingProgramm\orderservice\service\OrderService.class
 com\testingProgramm\orderservice\controller\OrderController.class
 com\testingProgramm\orderservice\model\Order.class
+com\testingProgramm\orderservice\dto\InventoryResponse$InventoryResponseBuilder.class
 com\testingProgramm\orderservice\OrderServiceApplication.class
 com\testingProgramm\orderservice\dto\OrderLineItemsDto.class
 com\testingProgramm\orderservice\dto\OrderRequest.class
+com\testingProgramm\orderservice\config\WebClientConfig.class
+com\testingProgramm\orderservice\dto\InventoryResponse.class
 com\testingProgramm\orderservice\model\OrderLineItems.class

@@ -9,16 +9,19 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api/inventory")
 @RequiredArgsConstructor
 public class InventoryController {
 
-    public final InventoryService inventoryService;
+    private final InventoryService inventoryService;
 
-    @GetMapping("/{skuCode}")
+    // http://localhost:8082/api/inventory/iphone-13,iphone13-red
+
+    // http://localhost:8082/api/inventory?skuCode=iphone-13&skuCode=iphone13-red
+    @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<InventoryResponse> isInStock(@RequestParam List<String> skuCode){
+    public List<InventoryResponse> isInStock(@RequestParam(name = "skuCode") List<String> skuCode) {
         return inventoryService.isInStock(skuCode);
     }
 }

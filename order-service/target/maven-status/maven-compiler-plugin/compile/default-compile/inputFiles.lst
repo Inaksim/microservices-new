@@ -1,8 +1,10 @@
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\dto\OrderLineItemsDto.java
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\repository\OrderRepository.java
+D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\dto\InventoryResponse.java
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\controller\OrderController.java
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\dto\OrderRequest.java
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\model\OrderLineItems.java
+D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\config\WebClientConfig.java
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\OrderServiceApplication.java
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\model\Order.java
 D:\JAVA\mircoservices-new\order-service\src\main\java\com\testingProgramm\orderservice\service\OrderService.java
