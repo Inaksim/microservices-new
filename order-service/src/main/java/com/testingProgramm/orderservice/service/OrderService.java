@@ -11,9 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
-
-
-import java.nio.file.WatchEvent;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
@@ -25,7 +22,8 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
 
-    private final WebClient webClient;
+    @Autowired
+    private WebClient.Builder webClientBuilder;
 
     public void placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
@@ -44,7 +42,7 @@ public class OrderService {
                 .toList();
         //call Inventory Service, and place order if product is in
         //stock
-       InventoryResponse[] inventoryResponseArray = webClient.get()
+       InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
                .uri("http://inventory-service/api/inventory",
                        uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                .retrieve()

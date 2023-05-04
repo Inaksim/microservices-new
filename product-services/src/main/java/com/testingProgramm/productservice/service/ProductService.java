@@ -15,10 +15,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Slf4j
 public class ProductService {
-
     private final ProductRepository productRepository;
-
-
     public void createProduct(ProductRequest productRequest) {
         Product product = Product.builder()
                 .name(productRequest.getName())
@@ -43,6 +40,5 @@ public class ProductService {
                 .description(product.getDescription())
                 .price(product.getPrice())
                 .build();
-
     }
 }
